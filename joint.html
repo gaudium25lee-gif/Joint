@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>손가락·발가락 인공관절 수입 준비 안내</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@300;400;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#0d1f33;--ink-mid:#1e3a56;--ink-soft:#2e5478;--steel:#4a6a88;--mist:#8aa4bc;--cloud:#d6e4f0;--paper:#f0f4f8;--white:#ffffff;--amber:#b07d2a;--amber-bg:#fdf6e8;--amber-bd:#e8d09a;--teal:#1a7a6e;--teal-bg:#e6f5f3;--teal-bd:#9dd4ce;--border:#cdd8e5;--shadow-sm:0 2px 8px rgba(13,31,51,0.07);--shadow-lg:0 16px 48px rgba(13,31,51,0.14);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Sans KR',sans-serif;background:transparent;color:var(--ink);padding:0;margin:0}
+  .page{max-width:100%;padding:0 0 40px}
+  .post-header{background:var(--white);border:1px solid var(--border);border-radius:10px 10px 0 0;border-bottom:none;padding:32px 36px 28px;position:relative;overflow:hidden}
+  .post-header::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ink) 0%,var(--ink-soft) 60%,#5a9fd4 100%)}
+  .post-header-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+  .post-header-left{flex:1}
+  .board-path{font-size:.7rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mist);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+  .board-path::before{content:'';display:inline-block;width:12px;height:2px;background:var(--mist)}
+  .post-title{font-family:'DM Serif Display','Noto Serif KR',serif;font-size:1.55rem;line-height:1.3;color:var(--ink);margin-bottom:16px;font-weight:400}
+  .post-title em{font-style:italic;color:var(--ink-soft)}
+  .post-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .meta-chip{display:flex;align-items:center;gap:5px;font-size:.74rem;color:var(--steel)}
+  .meta-chip svg{opacity:.6}
+  .meta-divider{width:1px;height:12px;background:var(--cloud)}
+  .status-pill{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;letter-spacing:.5px;padding:6px 14px;border-radius:24px;background:var(--amber-bg);color:var(--amber);border:1.5px solid var(--amber-bd);white-space:nowrap;flex-shrink:0}
+  .pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--amber);animation:pulsate 1.8s ease-in-out infinite}
+  @keyframes pulsate{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.7);opacity:.4}}
+  .post-body{background:var(--white);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;padding:36px 36px 40px}
+  .intro-notice{background:var(--paper);border:1px solid var(--border);border-left:4px solid var(--ink-soft);border-radius:6px;padding:18px 22px;margin-bottom:40px;display:flex;gap:14px}
+  .notice-icon-wrap{width:34px;height:34px;background:var(--ink-soft);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem}
+  .notice-body{font-size:.87rem;color:var(--steel);line-height:1.85}
+  .notice-body strong{color:var(--ink);font-weight:600}
+  .sec{margin-bottom:40px}
+  .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .sec-num{font-family:'DM Serif Display',serif;font-size:.74rem;color:var(--mist);font-weight:400;letter-spacing:1px;min-width:22px}
+  .sec-label{font-size:.71rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ink-soft)}
+  .sec-rule{flex:1;height:1px;background:var(--border)}
+  .sec-title{font-family:'Noto Serif KR',serif;font-size:1.08rem;font-weight:600;color:var(--ink);margin-bottom:11px}
+  .sec-desc{font-size:.87rem;line-height:1.9;color:var(--steel)}
+  .sec-desc p{margin-bottom:10px}
+  .sec-desc p:last-child{margin-bottom:0}
+  .sec-desc strong{color:var(--ink);font-weight:600}
+  .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+  .pcard{border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s;background:var(--white)}
+  .pcard:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+  .pcard-visual{height:140px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .pcard-visual.finger{background:linear-gradient(135deg,#0d1f33 0%,#1e3a56 55%,#2e5478 100%)}
+  .pcard-visual.toe{background:linear-gradient(135deg,#0d2a2a 0%,#1a4040 55%,#1e5858 100%)}
+  .pcard-visual svg{position:relative;z-index:1;filter:drop-shadow(0 4px 12px rgba(0,0,0,.3))}
+  .pcard-visual-circles{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .vc{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.06)}
+  .pcard-status{position:absolute;top:10px;right:10px;font-size:.63rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:rgba(255,255,255,.12);color:rgba(255,255,255,.8);padding:3px 9px;border-radius:20px;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(4px)}
+  .pcard-type{position:absolute;top:10px;left:10px;font-size:.6rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.5)}
+  .pcard-body{padding:20px 22px 0;flex:1}
+  .pcard-name{font-family:'Noto Serif KR',serif;font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:2px}
+  .pcard-eng{font-size:.7rem;color:var(--mist);letter-spacing:.5px;margin-bottom:12px}
+  .pcard-desc{font-size:.82rem;color:var(--steel);line-height:1.8;margin-bottom:14px}
+  .pcard-joints{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
+  .joint-chip{font-size:.67rem;font-weight:600;padding:3px 9px;border-radius:4px;background:var(--paper);color:var(--ink-soft);border:1px solid var(--cloud)}
+  .joint-chip.finger{background:#eaf0f8;color:#1e3a56;border-color:#b8ccde}
+  .joint-chip.toe{background:#e6f4f2;color:#1a4a45;border-color:#9dccc8}
+  .pcard-specs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+  .spec-cell{background:var(--white);padding:9px 12px}
+  .spec-cell-label{font-size:.62rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mist);margin-bottom:3px}
+  .spec-cell-val{font-size:.78rem;color:var(--ink);font-weight:500}
+  .spec-cell-val.tbd{color:var(--mist);font-weight:400;font-style:italic}
+  .pcard-foot{padding:12px 22px;border-top:1px solid var(--border);margin-top:16px;display:flex;align-items:center;justify-content:space-between;background:var(--paper)}
+  .pcard-foot-text{font-size:.72rem;color:var(--mist);display:flex;align-items:center;gap:6px}
+  .spinner{width:9px;height:9px;border-radius:50%;border:2px solid var(--cloud);border-top-color:var(--amber);animation:spin .9s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .pcard-foot-badge{font-size:.64rem;font-weight:700;padding:2px 9px;border-radius:3px;background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd)}
+  .criteria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+  .crit-item{padding:14px 16px;border:1px solid var(--border);border-radius:8px;background:var(--white);transition:border-color .2s,box-shadow .2s}
+  .crit-item:hover{border-color:var(--ink-soft);box-shadow:var(--shadow-sm)}
+  .crit-icon{font-size:1.05rem;margin-bottom:8px;display:block}
+  .crit-label{font-size:.78rem;font-weight:600;color:var(--ink);margin-bottom:4px}
+  .crit-desc{font-size:.74rem;color:var(--steel);line-height:1.7}
+  .timeline{margin-top:6px;margin-bottom:28px}
+  .tl-row{display:flex;align-items:stretch}
+  .tl-left{display:flex;flex-direction:column;align-items:center;width:36px;flex-shrink:0;padding-top:2px}
+  .tl-marker{width:15px;height:15px;border-radius:50%;flex-shrink:0;border:2px solid var(--border);background:var(--white);position:relative;z-index:1}
+  .tl-marker.done{background:var(--ink-soft);border-color:var(--ink-soft)}
+  .tl-marker.now{background:var(--amber);border-color:var(--amber);box-shadow:0 0 0 4px var(--amber-bg)}
+  .tl-line{width:2px;flex:1;background:var(--border);margin:3px 0;min-height:22px}
+  .tl-line.done{background:var(--ink-soft)}
+  .tl-right{flex:1;padding:0 0 24px 14px}
+  .tl-tag{font-size:.64rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
+  .tl-tag.done{color:var(--teal)}.tl-tag.now{color:var(--amber)}.tl-tag.upcoming{color:var(--mist)}
+  .tl-title{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:3px}
+  .tl-detail{font-size:.79rem;color:var(--steel);line-height:1.75}
+  .schedule-table{width:100%;border-collapse:collapse;font-size:.83rem;margin-top:8px}
+  .schedule-table thead tr{background:var(--ink)}
+  .schedule-table th{padding:11px 16px;text-align:left;color:rgba(255,255,255,.85);font-weight:500;font-size:.77rem}
+  .schedule-table th:first-child{border-radius:6px 0 0 0}.schedule-table th:last-child{border-radius:0 6px 0 0}
+  .schedule-table td{padding:10px 16px;border-bottom:1px solid var(--border);color:var(--steel);vertical-align:top}
+  .schedule-table td:first-child{color:var(--ink);font-weight:600;width:26%}
+  .schedule-table tr:last-child td{border-bottom:none}
+  .schedule-table tr:nth-child(even) td{background:var(--paper)}
+  .schedule-table tbody tr:hover td{background:#eaf0f8}
+  .badge-tbd{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 7px;border-radius:3px;background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd);margin-left:5px;vertical-align:middle}
+  .badge-confirmed{display:inline-block;font-size:.63rem;font-weight:700;padding:2px 7px;border-radius:3px;background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd);margin-left:5px;vertical-align:middle}
+  .warn-box{background:#fffbf0;border:1px solid var(--amber-bd);border-left:4px solid var(--amber);border-radius:6px;padding:14px 18px;font-size:.82rem;color:#7a5c1a;line-height:1.8;margin-top:28px}
+  .warn-box strong{font-weight:600}
+  .cta-block{margin-top:40px;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+  .cta-top{background:linear-gradient(135deg,var(--ink) 0%,var(--ink-mid) 60%,var(--ink-soft) 100%);padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .cta-heading{font-family:'DM Serif Display',serif;font-size:1.15rem;color:var(--white);margin-bottom:5px;font-weight:400}
+  .cta-sub{font-size:.81rem;color:rgba(255,255,255,.6);line-height:1.7}
+  .cta-buttons{display:flex;gap:10px;flex-shrink:0}
+  .cta-btn{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;padding:11px 20px;border-radius:6px;text-decoration:none;transition:all .2s;font-family:'Noto Sans KR',sans-serif}
+  .cta-btn.primary{background:var(--white);color:var(--ink)}.cta-btn.primary:hover{background:var(--amber-bg);color:var(--amber)}
+  .cta-btn.secondary{background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.2)}.cta-btn.secondary:hover{background:rgba(255,255,255,.18)}
+  .cta-bottom{background:var(--paper);padding:16px 34px;display:flex;align-items:center;gap:28px;flex-wrap:wrap;border-top:1px solid var(--border)}
+  .contact-item{display:flex;align-items:center;gap:7px;font-size:.78rem;color:var(--steel)}
+  .contact-item .label{font-weight:600;color:var(--ink-soft)}
+  @keyframes fadeInUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  .fade{animation:fadeInUp .5s ease both}.fade-2{animation:fadeInUp .5s ease .1s both}
+  @media(max-width:680px){.post-header,.post-body{padding:20px 18px}.post-header-inner{flex-direction:column}.product-grid{grid-template-columns:1fr}.criteria-grid{grid-template-columns:1fr 1fr}.cta-top{flex-direction:column;padding:22px 18px}.cta-bottom{padding:14px 18px;gap:14px}}
+  @media(max-width:460px){.criteria-grid{grid-template-columns:1fr}.cta-buttons{flex-direction:column;width:100%}.cta-btn{justify-content:center}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="post-header fade">
+    <div class="post-header-inner">
+      <div class="post-header-left">
+        <p class="board-path">수입 준비중인 제품</p>
+        <h1 class="post-title">손가락·발가락 <em>인공관절</em> 제품<br>수입 준비 안내</h1>
+        <div class="post-meta">
+          <span class="meta-chip"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>관리자</span>
+          <span class="meta-divider"></span>
+          <span class="meta-chip"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2025. 06. 10 등록</span>
+          <span class="meta-divider"></span>
+          <span class="meta-chip"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>조회 312</span>
+        </div>
+      </div>
+      <div class="status-pill"><span class="pulse-dot"></span>검토 진행중</div>
+    </div>
+  </div>
+  <div class="post-body fade-2">
+    <div class="intro-notice">
+      <div class="notice-icon-wrap">📋</div>
+      <div class="notice-body">당사는 현재 <strong>손가락 인공관절</strong> 및 <strong>발가락 인공관절</strong>의 국내 수입·유통을 준비하고 있습니다. 공급 제조사는 현재 <strong>복수 후보사를 검토 중</strong>이며 아직 확정되지 않았습니다. 제조사 및 제품 세부 정보는 선정 완료 후 본 게시판을 통해 즉시 안내드리겠습니다. 관심 있으신 의료기관 및 관계자분들의 <strong>사전 문의를 환영</strong>합니다.</div>
+    </div>
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">01</span><span class="sec-label">수입 추진 배경</span><span class="sec-rule"></span></div>
+      <h2 class="sec-title">왜 이 제품을 수입하려 하는가</h2>
+      <div class="sec-desc">
+        <p>고령화 사회의 진행과 함께 손가락·발가락 소관절 질환(류마티스 관절염, 골관절염, 외상성 관절 손상 등) 환자가 지속적으로 증가하고 있습니다. 반면 국내 의료 현장에서는 <strong>손발가락 소관절에 특화된 고품질 인공관절 제품의 선택지가 제한적</strong>인 실정입니다.</p>
+        <p>당사는 해외에서 임상적으로 검증된 손가락·발가락 인공관절 제품을 국내에 도입하여, 의료기관이 더 다양한 치료 옵션을 환자에게 제공할 수 있도록 지원하고자 합니다. 현재 미국·유럽의 주요 의료기기 제조사를 대상으로 <strong>임상 근거, 소재 품질, 수술 편의성, 인허가 현황</strong>을 종합 검토 중입니다.</p>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">02</span><span class="sec-label">수입 준비 중인 제품</span><span class="sec-rule"></span></div>
+      <h2 class="sec-title">제품 분류 및 적용 부위</h2>
+      <p class="sec-desc" style="margin-bottom:0">제조사는 미확정이나, 아래 두 카테고리의 제품을 수입 목표로 준비하고 있습니다.</p>
+      <div class="product-grid">
+        <div class="pcard">
+          <div class="pcard-visual finger">
+            <div class="pcard-visual-circles"><div class="vc" style="width:200px;height:200px"></div><div class="vc" style="width:145px;height:145px"></div><div class="vc" style="width:90px;height:90px"></div></div>
+            <span class="pcard-type">FINGER</span><span class="pcard-status">제조사 검토중</span>
+            <svg width="76" height="122" viewBox="0 0 80 130" fill="none"><rect x="30" y="4" width="20" height="38" rx="5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><rect x="24" y="44" width="32" height="12" rx="3" fill="rgba(201,180,110,0.85)"/><ellipse cx="40" cy="44" rx="16" ry="5" fill="rgba(230,210,140,0.9)"/><rect x="28" y="56" width="24" height="18" rx="3" fill="rgba(201,180,110,0.85)"/><circle cx="34" cy="65" r="3" fill="rgba(20,40,70,0.5)" stroke="rgba(230,210,140,0.5)" stroke-width="0.8"/><circle cx="46" cy="65" r="3" fill="rgba(20,40,70,0.5)" stroke="rgba(230,210,140,0.5)" stroke-width="0.8"/><ellipse cx="40" cy="74" rx="16" ry="5" fill="rgba(201,180,110,0.85)"/><rect x="24" y="74" width="32" height="12" rx="3" fill="rgba(201,180,110,0.85)"/><rect x="30" y="88" width="20" height="38" rx="5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>
+          </div>
+          <div class="pcard-body">
+            <p class="pcard-name">손가락 인공관절</p><p class="pcard-eng">Finger Joint Replacement System</p>
+            <p class="pcard-desc">손가락 관절의 연골 손상 및 관절 파괴 환자에게 적용되는 소관절 인공관절 시스템입니다. 류마티스 관절염, 골관절염, 외상 후 관절염 등이 주요 적응증입니다.</p>
+            <div class="pcard-joints"><span class="joint-chip finger">PIP 관절 (근위지절간)</span><span class="joint-chip finger">DIP 관절 (원위지절간)</span><span class="joint-chip finger">MCP 관절 (중수지절)</span></div>
+            <div class="pcard-specs">
+              <div class="spec-cell"><p class="spec-cell-label">제조사</p><p class="spec-cell-val tbd">검토 중</p></div>
+              <div class="spec-cell"><p class="spec-cell-label">주요 소재</p><p class="spec-cell-val">Ti 합금 / UHMWPE</p></div>
+              <div class="spec-cell"><p class="spec-cell-label">원산지</p><p class="spec-cell-val tbd">미국·유럽 (협의중)</p></div>
+              <div class="spec-cell"><p class="spec-cell-label">설계 방식</p><p class="spec-cell-val">모듈형 / 실리콘형</p></div>
+            </div>
+          </div>
+          <div class="pcard-foot"><span class="pcard-foot-text"><span class="spinner"></span> 공급사 선정 검토 중</span><span class="pcard-foot-badge">미확정</span></div>
+        </div>
+        <div class="pcard">
+          <div class="pcard-visual toe">
+            <div class="pcard-visual-circles"><div class="vc" style="width:200px;height:200px;border-color:rgba(255,255,255,0.05)"></div><div class="vc" style="width:145px;height:145px;border-color:rgba(255,255,255,0.05)"></div><div class="vc" style="width:90px;height:90px;border-color:rgba(255,255,255,0.05)"></div></div>
+            <span class="pcard-type">TOE</span><span class="pcard-status">제조사 검토중</span>
+            <svg width="134" height="68" viewBox="0 0 140 72" fill="none"><rect x="4" y="26" width="42" height="20" rx="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/><ellipse cx="50" cy="36" rx="16" ry="22" fill="rgba(201,180,110,0.85)"/><ellipse cx="50" cy="20" rx="11" ry="5" fill="rgba(230,210,140,0.9)"/><ellipse cx="50" cy="52" rx="11" ry="5" fill="rgba(230,210,140,0.9)"/><path d="M66 22 Q76 30 76 36 Q76 42 66 50 L84 50 L84 22 Z" fill="rgba(201,180,110,0.7)"/><rect x="84" y="26" width="52" height="20" rx="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/><ellipse cx="65" cy="36" rx="22" ry="12" fill="rgba(201,180,110,0.06)"/></svg>
+          </div>
+          <div class="pcard-body">
+            <p class="pcard-name">발가락 인공관절</p><p class="pcard-eng">Toe Joint Replacement System</p>
+            <p class="pcard-desc">발가락 관절의 통증과 변형을 교정·복원하는 인공관절 시스템입니다. 무지외반증 말기, 통풍성 관절 손상, 류마티스성 발 변형 등이 주요 적응증입니다.</p>
+            <div class="pcard-joints"><span class="joint-chip toe">MTP 1번 (제1 중족지절)</span><span class="joint-chip toe">MTP 2~5번</span><span class="joint-chip toe">지절간 관절</span></div>
+            <div class="pcard-specs">
+              <div class="spec-cell"><p class="spec-cell-label">제조사</p><p class="spec-cell-val tbd">검토 중</p></div>
+              <div class="spec-cell"><p class="spec-cell-label">주요 소재</p><p class="spec-cell-val">Co-Cr 합금 / UHMWPE</p></div>
+              <div class="spec-cell"><p class="spec-cell-label">원산지</p><p class="spec-cell-val tbd">미국·유럽 (협의중)</p></div>
+              <div class="spec-cell"><p class="spec-cell-label">설계 방식</p><p class="spec-cell-val">2-Piece 해부학형</p></div>
+            </div>
+          </div>
+          <div class="pcard-foot"><span class="pcard-foot-text"><span class="spinner"></span> 공급사 선정 검토 중</span><span class="pcard-foot-badge">미확정</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">03</span><span class="sec-label">공급사 선정 기준</span><span class="sec-rule"></span></div>
+      <h2 class="sec-title">검토 중인 주요 평가 항목</h2>
+      <p class="sec-desc" style="margin-bottom:0">최종 공급사는 아래 기준을 종합 평가하여 선정할 예정입니다.</p>
+      <div class="criteria-grid">
+        <div class="crit-item"><span class="crit-icon">📄</span><p class="crit-label">임상 근거</p><p class="crit-desc">장기 추시 데이터 및 동료 심사 논문 발표 실적</p></div>
+        <div class="crit-item"><span class="crit-icon">✅</span><p class="crit-label">국내외 인허가</p><p class="crit-desc">FDA, CE Mark, ISO 13485 및 MFDS 허가 가능 여부</p></div>
+        <div class="crit-item"><span class="crit-icon">🔩</span><p class="crit-label">소재 및 품질</p><p class="crit-desc">생체적합성 소재 사용 및 제조 품질관리 체계</p></div>
+        <div class="crit-item"><span class="crit-icon">🏥</span><p class="crit-label">수술 편의성</p><p class="crit-desc">전용 수술기구 세트 제공 및 의료진 교육 지원</p></div>
+        <div class="crit-item"><span class="crit-icon">📐</span><p class="crit-label">사이즈 다양성</p><p class="crit-desc">다양한 해부학 구조에 대응하는 사이즈·모듈 옵션</p></div>
+        <div class="crit-item"><span class="crit-icon">🔄</span><p class="crit-label">공급 안정성</p><p class="crit-desc">안정적 재고 운영 및 국내 기술지원 제공 여부</p></div>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">04</span><span class="sec-label">예상 수입 시기</span><span class="sec-rule"></span></div>
+      <h2 class="sec-title">진행 일정 및 현황</h2>
+      <div class="timeline">
+        <div class="tl-row"><div class="tl-left"><div class="tl-marker done"></div><div class="tl-line done"></div></div><div class="tl-right"><p class="tl-tag done">✓ 완료 — 2025년 4월</p><p class="tl-title">국내 시장 조사 및 수요 분석</p><p class="tl-detail">의료기관 수요 조사, 경쟁 제품 및 관련 학회 동향 파악 완료</p></div></div>
+        <div class="tl-row"><div class="tl-left"><div class="tl-marker done"></div><div class="tl-line done"></div></div><div class="tl-right"><p class="tl-tag done">✓ 완료 — 2025년 5월</p><p class="tl-title">해외 제조사 후보 발굴 및 초기 접촉</p><p class="tl-detail">미국·유럽 주요 의료기기 제조사 복수 접촉, 제품 카탈로그 및 임상 자료 수령</p></div></div>
+        <div class="tl-row"><div class="tl-left"><div class="tl-marker now"></div><div class="tl-line"></div></div><div class="tl-right"><p class="tl-tag now">● 현재 진행중 — 2025년 6월</p><p class="tl-title">제품 평가 및 공급사 선정 <span style="font-size:.72rem;color:var(--amber);font-weight:400">(제조사 미확정)</span></p><p class="tl-detail">임상 데이터 심층 검토, 샘플 수령 및 전문의 평가 협의 진행 중. 공급사는 아직 확정되지 않았습니다.</p></div></div>
+        <div class="tl-row"><div class="tl-left"><div class="tl-marker"></div><div class="tl-line"></div></div><div class="tl-right"><p class="tl-tag upcoming">예정 — 2025년 하반기</p><p class="tl-title">식약처(MFDS) 수입 허가 신청</p><p class="tl-detail">공급사 확정 후 국내 의료기기 수입 허가 절차 착수 예정</p></div></div>
+        <div class="tl-row"><div class="tl-left"><div class="tl-marker"></div><div class="tl-line" style="min-height:0;flex:0"></div></div><div class="tl-right" style="padding-bottom:0"><p class="tl-tag upcoming">목표 — 2026년</p><p class="tl-title">국내 의료기관 공식 공급 개시</p><p class="tl-detail">허가 취득 후 의료기관 대상 공급 및 사용자 교육 프로그램 운영 시작</p></div></div>
+      </div>
+      <table class="schedule-table">
+        <thead><tr><th>항목</th><th>손가락 인공관절</th><th>발가락 인공관절</th></tr></thead>
+        <tbody>
+          <tr><td>제조사</td><td>미정<span class="badge-tbd">검토중</span></td><td>미정<span class="badge-tbd">검토중</span></td></tr>
+          <tr><td>원산지</td><td>미국 / 유럽 (협의 중)</td><td>미국 / 유럽 (협의 중)</td></tr>
+          <tr><td>적용 부위</td><td>PIP, DIP, MCP 관절<span class="badge-confirmed">확정</span></td><td>MTP 1~5번, 지절관절<span class="badge-confirmed">확정</span></td></tr>
+          <tr><td>주요 소재 (예상)</td><td>Ti 합금 / UHMWPE / 실리콘</td><td>Co-Cr 합금 / UHMWPE</td></tr>
+          <tr><td>허가 신청 시기</td><td>2025년 하반기 예정<span class="badge-tbd">잠정</span></td><td>2025년 하반기 예정<span class="badge-tbd">잠정</span></td></tr>
+          <tr><td>공급 개시 목표</td><td>2026년 (잠정)</td><td>2026년 (잠정)</td></tr>
+        </tbody>
+      </table>
+      <div class="warn-box"><strong>⚠ 유의사항</strong><br>본 게시물의 일정 및 정보는 현재 검토 단계의 내용으로, 공급사 선정 및 인허가 진행 상황에 따라 변경될 수 있습니다. 확정된 정보는 본 게시판을 통해 별도 공지드릴 예정입니다. 본 내용은 제품 판매 또는 의료 시술을 권유하는 것이 아님을 알려드립니다.</div>
+    </div>
+    <div class="cta-block">
+      <div class="cta-top">
+        <div><p class="cta-heading">사전 문의 및 관심 등록</p><p class="cta-sub">해당 제품에 관심 있으신 의료기관 및 관계자분들께서는 아래를 통해 문의해 주세요.<br>공급사 확정 및 허가 취득 시 우선적으로 안내드리겠습니다.</p></div>
+        <div class="cta-buttons"><a href="mailto:import@medimport.co.kr" class="cta-btn primary">✉ 사전 문의하기</a><a href="#" class="cta-btn secondary">📋 관심 등록</a></div>
+      </div>
+      <div class="cta-bottom">
+        <div class="contact-item"><span class="label">대표전화</span> 02-1234-5678</div>
+        <div class="contact-item"><span class="label">이메일</span> import@medimport.co.kr</div>
+        <div class="contact-item"><span class="label">운영시간</span> 평일 09:00 – 18:00</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
